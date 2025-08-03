@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #621769;
+}
+
+body {
+    margin: 10px 15px 0 10px !important;
+}
+
+@media (min-width: 992px) {
+    body {
+        margin: 10px 70px 0 60px !important;
+    }
+}
+
+.brand-name {
+    font-family: Gabriola, sans-serif;
+    color: var(--primary-color);
+}
+
+.hero-button {
+    color: var(--primary-color) !important;
+    border: solid var(--primary-color) 2px !important;
+    border-radius: 7px;
+    font-weight: 600;
+    padding: 4px 20px;
+}
