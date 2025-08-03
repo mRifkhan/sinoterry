@@ -19,8 +19,18 @@ body {
 
 .hero-button {
     color: var(--primary-color) !important;
+    background-color: white;
     border: solid var(--primary-color) 2px !important;
     border-radius: 7px;
     font-weight: 600;
     padding: 4px 20px;
+}
+
+.hero-button:hover, .hero-button:active, .hero-button:focus {
+  color: white !important;
+  background-color: var(--primary-color) !important;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 4s;
 }
