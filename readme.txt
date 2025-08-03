@@ -1,2 +1,3 @@
 Sino Terry company name font is Gabriola.
-Primary color #621769.
+Primary color rebeccapurple.
+Secondary color lavender.
