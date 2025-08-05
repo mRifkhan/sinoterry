@@ -1,21 +1,18 @@
-body {
-    margin: 10px 15px 0 10px !important;
-}
-
-@media (min-width: 992px) {
-    body {
-        margin: 10px 70px 0 60px !important;
-    }
-}
+/* primary color Rebeccapurple */
+/* secondary color Whitesmoke */
 
 .brand-name {
     font-family: Gabriola, sans-serif;
     color: rebeccapurple;
 }
 
+#home {
+  scroll-margin-top: 90px; 
+}
+
 #home img {
-    opacity: 0.1;
-    animation: fadeUp 1.5s ease-in forwards;
+    opacity: 0;
+    animation: fadeUp 2s ease-in forwards;
 }
 
 @keyframes fadeUp {
@@ -38,6 +35,10 @@ body {
   background-color: rebeccapurple !important;
 }
 
+#about {
+    background-color: whitesmoke;
+}
+
 #about h3 {
     line-height: 1.5;
     color: rebeccapurple;
@@ -48,9 +49,13 @@ body {
 }
 
 .stat-card {
-    padding: 5px;
-    color: white;
     background-color: rebeccapurple;
-    text-align: center;
     border-radius: 8px;
+}
+
+.text-card {
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    color: white;
+    text-align: center;
 }
