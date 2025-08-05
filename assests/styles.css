@@ -35,17 +35,8 @@
   background-color: rebeccapurple !important;
 }
 
-#about {
+#snap-shot {
     background-color: whitesmoke;
-}
-
-#about h3 {
-    line-height: 1.5;
-    color: rebeccapurple;
-}
-
-#about p {
-    line-height: 1.5;
 }
 
 .stat-card {
@@ -58,4 +49,18 @@
     border-left: 2px solid white;
     color: white;
     text-align: center;
+    padding-top: 8%;
+}
+
+#about {
+    background-color: whitesmoke;
+}
+
+#about h3 {
+    line-height: 1.5;
+    color: rebeccapurple;
+}
+
+#about p {
+    line-height: 1.5;
 }
