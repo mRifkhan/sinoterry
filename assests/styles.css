@@ -1,12 +1,12 @@
 /* primary color Rebeccapurple */
 /* secondary color Whitesmoke */
 
-.brand-name {
-    font-family: Gabriola, sans-serif;
-    color: rebeccapurple;
+.brand-name, nav ul.navbar-nav > li {
+    font-family: Gabriola, sans-serif !important;
+    font-size: 1.5rem !important;
 }
 
-#home {
+#home, #products, #about {
   scroll-margin-top: 90px; 
 }
 
@@ -35,7 +35,7 @@
   background-color: rebeccapurple !important;
 }
 
-#snap-shot {
+#snap-shot, #about {
     background-color: whitesmoke;
 }
 
@@ -49,7 +49,25 @@
     border-left: 2px solid white;
     color: white;
     text-align: center;
-    padding-top: 8%;
+    padding-top: 10px;
+}
+
+.product-card {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    padding: 15px 15px 0 15px;
+}
+
+.product-card p {
+    padding: 0px 15px 0 15px;
+}
+
+.product-card img {
+    padding: 10px;
+    overflow: hidden;
 }
 
 #about {
