@@ -1,5 +1,5 @@
 /* primary color Rebeccapurple */
-/* secondary color Whitesmoke */
+/* secondary color bootstrap. bg-body-secondary-gradient */
 
 .brand-name, nav ul.navbar-nav > li {
     font-family: Gabriola, sans-serif !important;
@@ -35,10 +35,6 @@
   background-color: rebeccapurple !important;
 }
 
-#snap-shot, #about {
-    background-color: whitesmoke;
-}
-
 .stat-card {
     background-color: rebeccapurple;
     border-radius: 8px;
@@ -68,17 +64,4 @@
 .product-card img {
     padding: 10px;
     overflow: hidden;
-}
-
-#about {
-    background-color: whitesmoke;
-}
-
-#about h3 {
-    line-height: 1.5;
-    color: rebeccapurple;
-}
-
-#about p {
-    line-height: 1.5;
 }
