@@ -65,3 +65,9 @@
     padding: 10px;
     overflow: hidden;
 }
+
+#contact a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}

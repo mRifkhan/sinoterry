@@ -14,8 +14,48 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-white sticky-top px-sm-5">
-        <div class="container-fluid">
+    <!-- svg code for the country flags -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+        <symbol id="flag-china" viewBox="0 0 30 20">
+            <rect width="30" height="20" fill="#DE2910" />
+            <polygon points="5,2 6.2,5.4 9.8,5.4 6.8,7.6 8,11 5,8.6 2,11 3.2,7.6 0.2,5.4 3.8,5.4" fill="#FFDE00" />
+            <polygon transform="translate(10,2) rotate(23,1,1)" points="0,0 0.6,1.8 -0.5,0.7 1.5,0.7 0.4,1.8"
+                fill="#FFDE00" />
+            <polygon transform="translate(12,4) rotate(45,1,1)" points="0,0 0.6,1.8 -0.5,0.7 1.5,0.7 0.4,1.8"
+                fill="#FFDE00" />
+            <polygon transform="translate(12,7) rotate(0,1,1)" points="0,0 0.6,1.8 -0.5,0.7 1.5,0.7 0.4,1.8"
+                fill="#FFDE00" />
+            <polygon transform="translate(10,9) rotate(-23,1,1)" points="0,0 0.6,1.8 -0.5,0.7 1.5,0.7 0.4,1.8"
+                fill="#FFDE00" />
+        </symbol>
+
+        <symbol id="flag-india" viewBox="0 0 24 16">
+            <rect width="24" height="5.33" fill="#FF9933" />
+            <rect y="5.33" width="24" height="5.33" fill="#FFFFFF" />
+            <rect y="10.66" width="24" height="5.34" fill="#138808" />
+            <circle cx="12" cy="8" r="1.6" stroke="#000088" stroke-width="0.4" fill="none" />
+            <circle cx="12" cy="8" r="0.3" fill="#000088" />
+        </symbol>
+
+        <symbol id="flag-srilanka" viewBox="0 0 24 16">
+            <rect width="24" height="16" fill="#ffb400" />
+            <rect x="5" y="0" width="19" height="16" fill="#802000" />
+            <rect x="0" y="0" width="2" height="16" fill="#00534e" />
+            <rect x="2" y="0" width="3" height="16" fill="#ffb400" />
+            <circle cx="14" cy="8" r="3" fill="#ffb400" />
+        </symbol>
+
+        <symbol id="flag-bangladesh" viewBox="0 0 24 16">
+            <rect width="24" height="16" fill="#006a4e" />
+            <circle cx="10" cy="8" r="4" fill="#f42a41" />
+        </symbol>
+
+    </svg>
+    <!-- end of svg code of country flags -->
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container mt-1">
             <a class="navbar-brand d-flex align-items-baseline" href="#">
                 <img src="./assests/logos/logo.jpg" alt="Logo" width="auto" height="25" class="d-inline-block me-3">
                 <span class="brand-name">Sino Terry</span>
@@ -37,7 +77,7 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-disabled="true">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -123,31 +163,31 @@
                     <img class="img-fluid" src="./assests/images/alloy.jpeg" alt="alloy accessories">
                 </div>
                 <div class="product-card col-10 col-md-5 col-lg-3" data-aos="fade-up" data-aos-duration="500"
-                    data-aos-delay="150">
+                    data-aos-delay="100">
                     <h3 class="fs-4">Brass accessories</h3>
                     <p class="fs-6">Strong and flexible, suitable for functional trims.</p>
                     <img class="img-fluid" src="./assests/images/brass.jpg" alt="brass accessories">
                 </div>
                 <div class="product-card col-10 col-md-5 col-lg-3" data-aos="fade-up" data-aos-duration="500"
-                    data-aos-delay="300">
+                    data-aos-delay="200">
                     <h3 class="fs-4">Nylon accessories</h3>
                     <p class="fs-6">A form of light metal trims. Economical and core colors.</p>
                     <img class="img-fluid" src="./assests/images/nylon.png" alt="nylon accessories">
                 </div>
                 <div class="product-card col-10 col-md-5 col-lg-3" data-aos="fade-up" data-aos-duration="500"
-                    data-aos-delay="450">
+                    data-aos-delay="300">
                     <h3 class="fs-4">Plastic trims</h3>
                     <p class="fs-6">Lighter, suitable for wide range of aparel types.</p>
                     <img class="img-fluid" src="./assests/images/plastic.jpg" alt="plastic accessories">
                 </div>
                 <div class="product-card col-10 col-md-5 col-lg-3" data-aos="fade-up" data-aos-duration="500"
-                    data-aos-delay="600">
+                    data-aos-delay="400">
                     <h3 class="fs-4">Recycled/natural trims</h3>
                     <p class="fs-6">Made using a combination of recycled and natural materials.</p>
                     <img class="img-fluid" src="./assests/images/recycled.jpeg" alt="recycled accessories">
                 </div>
                 <div class="product-card col-10 col-md-5 col-lg-3" data-aos="fade-up" data-aos-duration="500"
-                    data-aos-delay="750">
+                    data-aos-delay="500">
                     <h3 class="fs-4">Fashion Belts</h3>
                     <p class="fs-6">Belts with metal or plastic buckles for all ages.</p>
                     <img class="img-fluid" src="./assests/images/belt.jpeg" alt="fashion belts">
@@ -158,10 +198,11 @@
 
     <section id="about" class="bg-body-secondary bg-gradient">
         <div class="container my-5 pb-4">
-            <h2 class="display-6 fw-medium text-center pt-5" data-aos="fade-up" data-aos-duration="800">About Us</h2>
+            <h2 class="display-6 fw-medium text-center pt-5" data-aos="fade-up" data-aos-duration="500">About Us</h2>
 
             <div class="row py-5 mx-2 ms-lg-0">
-                <div class="col-lg-6 rounded-3 bg-white px-4 py-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">
+                <div class="col-lg-6 rounded-3 bg-white px-4 py-3" data-aos="fade-up" data-aos-duration="500"
+                    data-aos-delay="100">
                     <p class="fs-5 fw-light"><b>Sino Terry</b> was incorporated in Hong Kong in 2000 as a manufacturer
                         and trader of
                         apparel
@@ -190,13 +231,126 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 d-flex flex-column justify-content-between gap-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">
+                <div class="col-lg-6 d-flex flex-column justify-content-between gap-2" data-aos="fade-up"
+                    data-aos-duration="500" data-aos-delay="100">
                     <img src="./assests/images/factory-1.jpg" class="img-fluid rounded-3" alt="factory">
                     <div class="d-flex gap-2">
                         <img src="./assests/images/factory-2.jpg" class="img-fluid w-50 rounded-3"
                             alt="spray painting metal trims">
                         <img src="./assests/images/factory-3.jpg" class="img-fluid w-50 rounded-3"
                             alt="color inspection of metal trims">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container my-5 pb-4">
+            <h2 class="display-6 fw-medium py-3 text-center" data-aos="fade-up" data-aos-duration="500">Contact Us</h2>
+            <p class="fs-4 fw-light text-center" data-aos="fade-up" data-aos-duration="500">
+                Send your inquiries and feedback by email, we will responde quickly!
+            </p>
+            <div class="row justify-content-around mt-5" data-aos="fade-up" data-aos-duration="500">
+                <div class="col-4">
+                    <!-- <a class="fs-3" href="mailto:info@sinoterry.com">General Inquiries:</a>
+                    <a class="fs-4 pt-1 fw-light" href="mailto:info@sinoterry.com">info@sinoterry.com</a> -->
+
+                     <div class="mb-5">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="./assests/logos/logo.jpg" width="32" height="auto" alt="">
+                                    </td>
+                                    <td class="fs-3 ps-3">General Inquiries</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><a class="fs-4 fw-light ps-3" href="mailto:info@sinoterry.com">info@sinoterry.com</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="mb-5">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <svg class="flag-icon rounded-1" width="28" height="20">
+                                            <use xlink:href="#flag-china"></use>
+                                        </svg>
+                                    </td>
+                                    <td class="fs-3 ps-2">China</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><a class="fs-4 fw-light ps-2" href="mailto:amy@sinoterry.com">amy@sinoterry.com</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mb-5">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <svg class="flag-icon rounded-1" width="28" height="20">
+                                            <use xlink:href="#flag-india"></use>
+                                        </svg>
+                                    </td>
+                                    <td class="fs-3 ps-2">India</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><a class="fs-4 fw-light ps-2" href="mailto:india@sinoterry.com">india@sinoterry.com</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="mb-5">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <svg class="flag-icon rounded-1" width="28" height="20">
+                                            <use xlink:href="#flag-srilanka"></use>
+                                        </svg>
+                                    </td>
+                                    <td class="fs-3 ps-2">Sri Lanka</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><a class="fs-4 fw-light ps-2" href="mailto:srianka@sinoterry.lk">srilanka@sinoterry.lk</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mb-5">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <svg class="flag-icon rounded-1" width="28" height="20">
+                                            <use xlink:href="#flag-bangladesh"></use>
+                                        </svg>
+                                    </td>
+                                    <td class="fs-3 ps-2">India</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><a class="fs-4 fw-light ps-2" href="mailto:bangladesh@sinoterry.com">bangladesh@sinoterry.com</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
