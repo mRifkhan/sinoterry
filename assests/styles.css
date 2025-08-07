@@ -12,7 +12,7 @@
 
 #home img {
     opacity: 0;
-    animation: fadeUp 2s ease-in forwards;
+    animation: fadeUp 1.5s ease-in forwards;
 }
 
 @keyframes fadeUp {
@@ -66,8 +66,18 @@
     overflow: hidden;
 }
 
+#contact img {
+    height: 22px;
+    width: auto;
+}
 #contact a {
     text-decoration: none;
     display: block;
     color: black;
+    font-weight: 300;
+}
+
+#contact a:hover {
+    color: rebeccapurple;
+    font-weight: 400;
 }
