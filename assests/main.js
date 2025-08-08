@@ -25,3 +25,31 @@ navLinks.forEach(link => {
     link.classList.add('active');
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+
+      if (targetId.startsWith('#')) {
+        e.preventDefault();
+
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        if (bsCollapse) bsCollapse.hide();
+
+        setTimeout(() => {
+          const target = document.querySelector(targetId);
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 90, // offset for sticky navbar
+              behavior: 'smooth'
+            });
+          }
+        }, 300);
+      }
+    });
+  });
+});
