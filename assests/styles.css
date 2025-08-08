@@ -1,12 +1,12 @@
 /* primary color Rebeccapurple */
-/* secondary color bootstrap. bg-body-secondary-gradient */
+/* secondary color bootstrap .bg-body-secondary-gradient */
 
-.brand-name, nav ul.navbar-nav > li {
+.brand-name {
     font-family: Gabriola, sans-serif !important;
     font-size: 1.5rem !important;
 }
 
-#home, #products, #about {
+#home, #products, #about, #contact {
   scroll-margin-top: 90px; 
 }
 
@@ -70,14 +70,24 @@
     height: 22px;
     width: auto;
 }
+
 #contact a {
-    text-decoration: none;
-    display: block;
-    color: black;
     font-weight: 300;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
 
 #contact a:hover {
     color: rebeccapurple;
     font-weight: 400;
+}
+
+footer img {
+    height: 40px;
+    width: auto;
+    padding: 5px;
+}
+
+footer hr {
+    margin-top: 0 !important;
 }
