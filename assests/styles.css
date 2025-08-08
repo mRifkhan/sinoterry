@@ -6,6 +6,13 @@
     font-size: 1.5rem !important;
 }
 
+.navbar-nav a.active {
+  font-weight: 600;
+  color: #000; 
+  border-top: solid currentColor 2px;
+}
+
+
 #home, #products, #about, #contact {
   scroll-margin-top: 90px; 
 }
